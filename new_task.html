@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+    
+}
+.navbar li{
+    font-size: 20px;
+    padding-left: 80px;
+    list-style: none;
+}
+.home{
+    height: 85vh;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+}
+.home h1{
+    position: absolute;
+    top: 250px;
+    left: 500px; 
+    text-shadow: 0px 0px 5px 1px;   
+}
+.home video{
+    height: inherit;
+    width: inherit;
+    filter: blur(5px);
+    object-fit: cover;
+}
+.about{
+    height: 85vh;
+    width: 100%;
+    /* background-color:burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+
+}
+.about .child{
+    height: 75vh;
+    width:80% ;
+    /* background-color: brown; */
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 3px white;
+    padding: 10px;
+}
+.about .child img{
+    height: inherit;
+    width: 30%;
+    border-radius: 20px;
+}
+.about .child .content{
+    height: 100%;
+    width: 70%;
+    /* background-color:rgb(239, 185, 7); */
+    /* height: 450px; */
+}
+.child .content{
+    padding: 15px;
+    line-height: 40px;
+    text-align: justify;
+}
+.child .content h1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset:10px ;
+    text-decoration: color( red red red);
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.hero video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+.hero-content h1{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero-content p{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.hero-content button{
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.services{
+    height: 2900px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+
+.services .card{
+    height: 400px;
+    width: 270px;
+    background-color: rgb(243, 243, 245);
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    border-bottom: 5px solid rgb(173, 173, 47);
+}
+
+.services .card img{
+    height: 50%;
+    width: inherit;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.services .card h1{
+    text-align: center;
+    
+}
+
+.services .card p{
+    text-align: justify;
+    
+    
+}
+
+.services .card button{
+   padding: 10px 20px;
+   font-size: 20px;
+   border:none;
+   border-radius: 10px;
+   background-color: orange;
+   color: white;
+   margin-left: 50px;
+   margin-top: 10px;
+}
+
+
+ .parent{
+            height: 100vh;
+            width: 100;
+            /* background-color: black; */
+            display:grid;
+            /* grid-template-columns: 50% 50%; */
+            grid-template-columns: repeat(2, 1fr);
+            /* grid-template-rows: 25% 25% 25% 25%; */
+            grid-template-rows: repeat(4, 1fr);
+            gap: 10PX;
+            padding: 5px;
+        }
+
+        body{
+         background-image: url(https://t4.ftcdn.net/jpg/04/94/85/25/360_F_494852538_r8ylVApdAY0YuWYCkWIsg5pDZkboERYI.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .parent .child{
+            /* background-color: bisque; */
+            /* border: solid ; */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 50px;
+        }
+        .parent .contact{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .parent .form{
+            grid-row-start: 2;
+            grid-row-end: 5;
+            width: 100%;
+        }
+        input {
+    width: 300px;
+    height: 35px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+.parent .feedback{
+     width: 100%;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1);
+    box-shadow: 0 0 25px white;
+    cursor: pointer;
+}
+        
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <li>Home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Contact</li>
+    </nav>
+
+    <section class="home">
+        <video src="https://videos.pexels.com/video-files/8811070/8811070-hd_1920_1080_25fps.mp4" autoplay controls loop muted></video>
+       <div class="hero-content">
+    <!-- <h1>Welcome to Spice Garden</h1> -->
+    <p>Delicious food, warm hospitality, unforgettable moments.</p>
+    <button>Explore Menu</button>
+</div>
+    </section>
+
+    <section class="about">
+        <div class="child">
+            <img src="https://cdn.sanity.io/images/o4aog1mm/production/7421b51b25084a1ca60471ed1112b762177f46ca-3000x4000.jpg?w=1200" alt="">
+            <div class="content">
+                <h1>About Us..</h1>
+                <p>Welcome to our restaurant, where great taste meets warm hospitality. We are passionate about serving fresh, flavorful, and carefully prepared food that brings people together. From delicious Indian favorites to popular snacks and comforting meals, every dish is made with quality ingredients and attention to taste. Our goal is to create a welcoming place where families, friends, and food lovers can relax, enjoy good food, and make memorable moments. We believe that every meal should be more than just food—it should be an experience worth coming back for.</p>
+                <h3>~ADITYA MANWAR</h3>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+      <!-- 1. PAV BHAJI -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bombay%20pav%20bhaji.jpg" alt="Pav Bhaji">
+    <h1>PAV BHAJI</h1>
+    <p>A famous Mumbai street food made with spicy mashed vegetables served with buttery toasted pav.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 2. VADA PAV -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Indian%20(Mumbai)%20Vada%20Pav.jpg" alt="Vada Pav">
+    <h1>VADA PAV</h1>
+    <p>A popular Mumbai street food consisting of a spicy potato vada served inside a soft pav.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 3. MASALA DOSA -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masala%20dosa.jpg" alt="Masala Dosa">
+    <h1>MASALA DOSA</h1>
+    <p>A crispy South Indian dosa filled with seasoned potato masala and served with chutney and sambar.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 4. SAMOSA -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samosa.jpg" alt="Samosa">
+    <h1>SAMOSA</h1>
+    <p>A crispy triangular snack filled with spiced potatoes, peas and flavorful Indian seasonings.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 5. KACHORI -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Aloo%20Pyaaz%20Kachori.jpg" alt="Kachori">
+    <h1>KACHORI</h1>
+    <p>A crispy deep-fried Indian snack filled with a delicious mixture of potatoes, onions and spices.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 6. PANEER TIKKA -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Barbequed%20Paneer%20Tikka.jpg" alt="Paneer Tikka">
+    <h1>PANEER TIKKA</h1>
+    <p>Marinated paneer cubes grilled with vegetables and aromatic spices for a smoky and flavorful taste.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 7. SHAHI PANEER -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Shahi%20paneer.jpg" alt="Shahi Paneer">
+    <h1>SHAHI PANEER</h1>
+    <p>Soft paneer cubes cooked in a rich and creamy gravy made with tomatoes, cream and Indian spices.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 8. CHOLE BHATURE -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Chole%20bhature.jpg" alt="Chole Bhature">
+    <h1>CHOLE BHATURE</h1>
+    <p>A popular North Indian dish of spicy chickpea curry served with large fluffy fried bhature.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 9. DAL MAKHANI -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Dal%20Makhani%2001.jpg" alt="Dal Makhani">
+    <h1>DAL MAKHANI</h1>
+    <p>A rich and creamy lentil curry slowly cooked with butter, tomatoes, cream and aromatic spices.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 10. VEG BIRYANI -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Vegetable-biryani.jpg" alt="Veg Biryani">
+    <h1>VEG BIRYANI</h1>
+    <p>A flavorful rice dish prepared with basmati rice, fresh vegetables, herbs and aromatic spices.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 11. IDLI SAMBAR -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Idli%20plate%20with%20sambar%20and%20coconut%20chutney.jpg" alt="Idli Sambar">
+    <h1>IDLI SAMBAR</h1>
+    <p>Soft steamed rice cakes served with flavorful sambar and fresh coconut chutney.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 12. POHA -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Kanda%20Pohe.jpg" alt="Poha">
+    <h1>POHA</h1>
+    <p>A popular Maharashtrian breakfast made with flattened rice, onions, spices, coriander and lemon.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 13. VEG BURGER -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The%20ultimate%20veggie%20burger.jpg" alt="Veg Burger">
+    <h1>VEG BURGER</h1>
+    <p>A delicious vegetable patty served in a soft bun with fresh vegetables and flavorful sauces.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 14. FRIED RICE -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Fried%20rice%203.jpg" alt="Fried Rice">
+    <h1>FRIED RICE</h1>
+    <p>Cooked rice stir-fried with vegetables, sauces and seasonings for a quick and flavorful meal.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 15. JALEBI -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20Jalebi.jpg" alt="Jalebi">
+    <h1>JALEBI</h1>
+    <p>A crispy spiral-shaped Indian sweet soaked in sugar syrup and enjoyed hot or cold.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 16. GULAB JAMUN -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20bowl%20of%20Gulab%20Jamun.jpg" alt="Gulab Jamun">
+    <h1>GULAB JAMUN</h1>
+    <p>Soft fried milk-solid balls soaked in sweet sugar syrup flavored with cardamom.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 17. ALOO PARATHA -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Aaloo%20Paratha.JPG" alt="Aloo Paratha">
+    <h1>ALOO PARATHA</h1>
+    <p>A popular Indian flatbread stuffed with seasoned mashed potatoes and cooked with ghee or butter.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 18. VEG MOMOS -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/-Vegetable%20Momos%20-Restaurant%20-Yummy%20-Family%20trip.jpg" alt="Veg Momos">
+    <h1>VEG MOMOS</h1>
+    <p>Soft steamed dumplings filled with seasoned vegetables and usually served with spicy chutney.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 19. DHOKLA -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ahmedabad%20ke%20dhokle%20@Induben%20Khakhrawala%20(8373188176).jpg" alt="Dhokla">
+    <h1>DHOKLA</h1>
+    <p>A soft and spongy Gujarati snack prepared from fermented batter and seasoned with mustard seeds.</p>
+    <button>Explore More</button>
+</div>
+
+<!-- 20. UTTAPAM -->
+<div class="card">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Cabbage%20uttapam.JPG" alt="Uttapam">
+    <h1>UTTAPAM</h1>
+    <p>A thick South Indian pancake made from fermented rice and lentil batter with vegetable toppings.</p>
+    <button>Explore More</button>
+</div>
+    </section>
+
+ <section class="parent">
+    <section class="child contact">CONTACT US!</section>
+    <section class="child form">
+
+        <h3 style="text-shadow: 1px 2px 1px darkcyan; margin-left: 20px;">Request a Call</h3><br>
+        <form action="" style=" padding: 2px;  font-size: 40px;">
+         <label>Name:</label>
+            <input type="text" name="firstName"
+                   maxlength="15"
+                   required
+                   placeholder="ENTER NAME">
+        <br>
+       <label>Email:</label>
+            <input type="email" name="email"
+                   maxlength="15"
+                   required
+                   placeholder="ENTER MAILl">
+        <br>
+        <label>Mobile Number:</label><br>
+            <input type="tel" name="mobile"
+                   maxlength="10"
+                   pattern="[0-9]{10}"
+                   title="Enter exactly 10 digits"
+                   required
+                   placeholder="10 DIGIT NUMBER">
+         
+        <br>
+         <label>City:</label><br>
+            <input type="text" name="city"
+                   maxlength="15"
+                   required
+                   placeholder="ENTER CITY">
+        <br>
+        <label>PIN Code:</label><br>
+            <input type="text" name="pincode"
+                   maxlength="6"
+                   pattern="[0-9]{6}"
+                   title="Enter exactly 6 digits"
+                   required
+                   placeholder="ENTER PIN CODE"><br>
+        <button style="margin-left: 125px;">Submit</button>
+   </form> 
+    </section>
+    <section class="child">
+        <a href="https://www.instagram.com/" target="_blank">
+    <i class="fa-brands fa-instagram fa-float" style="color: rgb(0, 0, 0);"></i></a>
+    <a href="https://web.whatsapp.com/" target="_blank">
+    <i class="fa-brands fa-whatsapp fa-float" style="color: rgb(0, 0, 0);"></i></a>
+    <a href="https://www.truckdrivermusic.in/" target="_blank">
+    <i class="fa-brands fa-snapchat fa-float" style="color: rgb(0, 0, 0);"></i></a>
+    <a href="https://www.facebook.com/" target="_blank">
+    <i class="fa-brands fa-facebook fa-float" style="color: rgb(0, 0, 0);"></i></a>
+    </section>
+    <section class="child">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238160.823358931!2d78.91885480217223!3d21.141934758580003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1790858791150!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+    <section class="child feedback">
+        <label>feedback:</label>
+    <textarea placeholder="Enter your feedback"></textarea>
+    </section>
+    </section>
+
+    </body>
+</html>
